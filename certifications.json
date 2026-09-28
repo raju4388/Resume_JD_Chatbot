@@ -1,0 +1,72 @@
+{
+    "python": [
+        "Python Programming Certification",
+        "Advanced Python Certification"
+    ],
+
+    "java": [
+        "Java Programming Certification",
+        "Java Full Stack Certification"
+    ],
+
+    "sql": [
+        "SQL Certification",
+        "Advanced SQL Certification"
+    ],
+
+    "aws": [
+        "AWS Cloud Fundamentals Certification",
+        "AWS Cloud Practitioner"
+    ],
+
+    "docker": [
+        "Docker Fundamentals Certification",
+        "Docker for Developers Certification"
+    ],
+
+    "react": [
+        "React.js Certification",
+        "Frontend Development Certification"
+    ],
+
+    "counselling": [
+        "Academic Counselling Certification",
+        "Student Guidance and Counselling Certification"
+    ],
+
+    "communication": [
+        "Professional Communication Certification"
+    ],
+
+    "networking": [
+        "Professional Networking Certification"
+    ],
+
+    "sales": [
+        "Sales Fundamentals Certification",
+        "Business Development Certification"
+    ],
+
+    "lead generation": [
+        "Lead Generation Certification",
+        "Digital Marketing Fundamentals Certification"
+    ],
+
+    "relationship building": [
+        "Relationship Management Certification",
+        "Customer Relationship Management Certification"
+    ],
+
+    "negotiation": [
+        "Negotiation Skills Certification",
+        "Business Negotiation Certification"
+    ],
+
+    "reporting": [
+        "Business Reporting Certification"
+    ],
+
+    "documentation": [
+        "Professional Documentation Certification"
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "programming": [
+        "Python",
+        "Java",
+        "C",
+        "C++",
+        "HTML"
+    ],
+
+    "database": [
+        "SQL",
+        "MySQL",
+        "MongoDB"
+    ],
+
+    "cloud": [
+        "AWS",
+        "Azure",
+        "Docker"
+    ],
+
+    "frameworks": [
+        "Spring Boot",
+        "React",
+        "Node.js"
+    ],
+
+    "communication": [
+        "Communication",
+        "Counselling",
+        "Email outreach",
+        "Networking",
+        "Sales",
+        "Lead generation",
+        "Relationship building",
+        "Negotiation",
+        "Reporting",
+        "Documentation"
+    ]
+}

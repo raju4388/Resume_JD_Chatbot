@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Resume-JD Chatbot</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #d9dbd5;
+        }
+
+        /* HEADER */
+
+        .header {
+            height: 60px;
+            background: #075e54;
+            color: white;
+
+            display: flex;
+            align-items: center;
+
+            padding: 10px 15px;
+
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .bot-icon {
+            width: 40px;
+            height: 40px;
+
+            background: white;
+            color: #075e54;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-right: 10px;
+
+            font-size: 20px;
+        }
+
+        .status {
+            font-size: 12px;
+            font-weight: normal;
+            margin-left: 5px;
+            opacity: 0.9;
+        }
+
+        /* CHAT */
+
+        .chat {
+            max-width: 750px;
+            margin: auto;
+
+            height: calc(100vh - 60px);
+
+            display: flex;
+            flex-direction: column;
+
+            background: #efeae2;
+        }
+
+        .messages {
+            flex: 1;
+
+            overflow-y: auto;
+
+            padding: 20px;
+        }
+
+        /* MESSAGE */
+
+        .message {
+            display: flex;
+            margin-bottom: 18px;
+        }
+
+        .bot-message {
+            justify-content: flex-start;
+        }
+
+        .user-message {
+            justify-content: flex-end;
+        }
+
+        .bubble {
+            max-width: 80%;
+
+            padding: 12px 15px;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+
+            line-height: 1.5;
+
+            box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        }
+
+        .bot-bubble {
+            background: white;
+            border-top-left-radius: 3px;
+        }
+
+        .user-bubble {
+            background: #dcf8c6;
+            border-top-right-radius: 3px;
+        }
+
+        /* UPLOAD */
+
+        .upload-box {
+            background: white;
+
+            padding: 18px;
+
+            border-radius: 10px;
+
+            margin-top: 10px;
+        }
+
+        .file-title {
+            font-weight: bold;
+
+            margin-top: 12px;
+            margin-bottom: 7px;
+        }
+
+        input[type="file"] {
+            width: 100%;
+
+            padding: 10px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 7px;
+
+            background: #fafafa;
+        }
+
+        /* BUTTON */
+
+        .analyze-button {
+            width: 100%;
+
+            margin-top: 18px;
+
+            padding: 13px;
+
+            background: #128c7e;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 7px;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .analyze-button:hover {
+            background: #075e54;
+        }
+
+        /* BOTTOM */
+
+        .bottom {
+            background: #f0f0f0;
+
+            padding: 10px 15px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+        }
+
+        .attachment {
+            font-size: 25px;
+        }
+
+        .bottom-text {
+            flex: 1;
+
+            background: white;
+
+            padding: 12px;
+
+            border-radius: 20px;
+
+            color: #777;
+        }
+
+        .send {
+            width: 42px;
+            height: 42px;
+
+            border-radius: 50%;
+
+            border: none;
+
+            background: #128c7e;
+
+            color: white;
+
+            font-size: 18px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            .chat {
+                width: 100%;
+            }
+
+            .messages {
+                padding: 12px;
+            }
+
+            .bubble {
+                max-width: 90%;
+            }
+
+            .header {
+                font-size: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<div class="header">
+
+    <div class="bot-icon">
+        🤖
+    </div>
+
+    <div>
+
+        Resume-JD Assistant
+
+        <div class="status">
+            online
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- CHAT -->
+
+<div class="chat">
+
+
+    <div class="messages">
+
+
+        <!-- BOT -->
+
+        <div class="message bot-message">
+
+            <div class="bubble bot-bubble">
+
+                <b>🤖 Resume-JD Assistant</b>
+
+                <br><br>
+
+                Hello! 👋
+
+                <br><br>
+
+                Upload your <b>Resume</b> and
+                <b>Job Description</b>.
+
+                <br><br>
+
+                I will analyze them and show:
+
+                <br>
+
+                ✅ Matching Skills
+                <br>
+
+                ❌ Missing Skills
+                <br>
+
+                📊 Matching Percentage
+                <br>
+
+                📚 Recommended Courses
+                <br>
+
+                🏆 Certifications
+                <br>
+
+                💡 Resume Suggestions
+
+            </div>
+
+        </div>
+
+
+        <!-- UPLOAD -->
+
+        <div class="message bot-message">
+
+            <div class="bubble bot-bubble">
+
+                <b>📎 Upload your files</b>
+
+
+                <div class="upload-box">
+
+
+                    <form action="/analyze"
+                          method="POST"
+                          enctype="multipart/form-data">
+
+
+                        <div class="file-title">
+
+                            📄 Resume
+
+                        </div>
+
+                        <input
+                            type="file"
+                            name="resume"
+                            accept=".pdf,.docx"
+                            required
+                        >
+
+
+                        <div class="file-title">
+
+                            📋 Job Description
+
+                        </div>
+
+                        <input
+                            type="file"
+                            name="jd"
+                            accept=".pdf,.docx"
+                            required
+                        >
+
+
+                        <button
+                            type="submit"
+                            class="analyze-button">
+
+                            🔍 Analyze
+
+                        </button>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- INFORMATION -->
+
+        <div class="message bot-message">
+
+            <div class="bubble bot-bubble">
+
+                💡 <b>Supported files:</b>
+
+                PDF and DOCX
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- BOTTOM BAR -->
+
+    <div class="bottom">
+
+        <div class="attachment">
+            📎
+        </div>
+
+        <div class="bottom-text">
+            Upload Resume & Job Description...
+        </div>
+
+        <button class="send">
+            ➤
+        </button>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

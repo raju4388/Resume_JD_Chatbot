@@ -1,0 +1,62 @@
+{
+    "python": [
+        "Python Programming Course",
+        "Advanced Python Programming"
+    ],
+    "java": [
+        "Java Programming Course",
+        "Java Full Stack Development"
+    ],
+    "sql": [
+        "SQL for Beginners",
+        "Advanced SQL"
+    ],
+    "aws": [
+        "AWS Cloud Fundamentals",
+        "AWS Cloud Practitioner"
+    ],
+    "docker": [
+        "Docker Fundamentals",
+        "Docker for Developers"
+    ],
+    "react": [
+        "React.js Fundamentals",
+        "React Frontend Development"
+    ],
+    "counselling": [
+        "Academic Counselling Fundamentals",
+        "Student Counselling Skills"
+    ],
+    "email outreach": [
+        "Email Communication Skills",
+        "Professional Email Writing"
+    ],
+    "networking": [
+        "Professional Networking Skills",
+        "Business Networking Fundamentals"
+    ],
+    "sales": [
+        "Sales Fundamentals",
+        "Sales and Business Development"
+    ],
+    "lead generation": [
+        "Lead Generation Fundamentals",
+        "Digital Lead Generation"
+    ],
+    "relationship building": [
+        "Relationship Management Skills",
+        "Customer Relationship Management"
+    ],
+    "negotiation": [
+        "Negotiation Skills Fundamentals",
+        "Business Negotiation Skills"
+    ],
+    "reporting": [
+        "Business Reporting Fundamentals",
+        "Professional Reporting Skills"
+    ],
+    "documentation": [
+        "Technical Documentation Fundamentals",
+        "Professional Documentation Skills"
+    ]
+}
